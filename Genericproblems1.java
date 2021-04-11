@@ -5,24 +5,24 @@ import org.junit.jupiter.api.Test;
 
 public class GenericTestCases {
     @Test
-    void checkingIntegerForTheFirstPosition()
+    void checkingFloatForFirstPosition()
     {
         Genericsprob maxvalue = new Genericsprob();
-        Comparable max = maxvalue.max(900,100,29);
-        Assertions.assertEquals(900,max);
+        Comparable max = maxvalue.max(9.5f,1.12f,2.667f);
+        Assertions.assertEquals(9.5f,max);
     }
     @Test
-    void checkingIntegerForTheSecondPosition()
+    void checkingFloatForSecondPosition()
     {
         Genericsprob maxvalue = new Genericsprob();
-        Comparable max = maxvalue.max(900,1000,29);
-        Assertions.assertEquals(1000,max);
+        Comparable max = maxvalue.max(5.5f,9.12f,2.667f);
+        Assertions.assertEquals(9.12f,max);
     }
     @Test
-    void checkingIntegerForTheThirdPosition()
+    void checkingFloatForThirdPosition()
     {
         Genericsprob maxvalue = new Genericsprob();
-        Comparable max = maxvalue.max(900,100,2900);
-        Assertions.assertEquals(2900,max);
+        Comparable max = maxvalue.max(5.5f,9.12f,22.667f);
+        Assertions.assertEquals(22.667f,max);
     }
 }
